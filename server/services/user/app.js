@@ -8,7 +8,7 @@ const db = pgp(
 
 // QNJ5j76djhN8WhDm
 app.get("/", (_, res) => {
-  res.status(200).json({ msg: "user service" });
+  res.status(200).json({ msg: "user service", PORT });
 });
 
 app.get("/users", (_, res) => {
